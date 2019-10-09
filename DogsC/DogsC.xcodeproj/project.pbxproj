@@ -1,0 +1,399 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		852A73C0234E77E700E235D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 852A73BF234E77E700E235D1 /* AppDelegate.m */; };
+		852A73C3234E77E700E235D1 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 852A73C2234E77E700E235D1 /* SceneDelegate.m */; };
+		852A73C9234E77E700E235D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 852A73C7234E77E700E235D1 /* Main.storyboard */; };
+		852A73CB234E77E800E235D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 852A73CA234E77E800E235D1 /* Assets.xcassets */; };
+		852A73CE234E77E800E235D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 852A73CC234E77E800E235D1 /* LaunchScreen.storyboard */; };
+		852A73D1234E77E800E235D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 852A73D0234E77E800E235D1 /* main.m */; };
+		852A73DB234E783100E235D1 /* ZWWBreed.m in Sources */ = {isa = PBXBuildFile; fileRef = 852A73DA234E783100E235D1 /* ZWWBreed.m */; };
+		852A73DE234E7C0500E235D1 /* ZWWSubBreeds.m in Sources */ = {isa = PBXBuildFile; fileRef = 852A73DD234E7C0500E235D1 /* ZWWSubBreeds.m */; };
+		852A73E3234E843B00E235D1 /* ZWWBreedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 852A73E2234E843B00E235D1 /* ZWWBreedController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		852A73BB234E77E700E235D1 /* DogsC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogsC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		852A73BE234E77E700E235D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		852A73BF234E77E700E235D1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		852A73C1234E77E700E235D1 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		852A73C2234E77E700E235D1 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		852A73C8234E77E700E235D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		852A73CA234E77E800E235D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		852A73CD234E77E800E235D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		852A73CF234E77E800E235D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		852A73D0234E77E800E235D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		852A73D9234E783100E235D1 /* ZWWBreed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWWBreed.h; sourceTree = "<group>"; };
+		852A73DA234E783100E235D1 /* ZWWBreed.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWWBreed.m; sourceTree = "<group>"; };
+		852A73DC234E7C0500E235D1 /* ZWWSubBreeds.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWWSubBreeds.h; sourceTree = "<group>"; };
+		852A73DD234E7C0500E235D1 /* ZWWSubBreeds.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWWSubBreeds.m; sourceTree = "<group>"; };
+		852A73E1234E843B00E235D1 /* ZWWBreedController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWWBreedController.h; sourceTree = "<group>"; };
+		852A73E2234E843B00E235D1 /* ZWWBreedController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWWBreedController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		852A73B8234E77E700E235D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		852A73B2234E77E700E235D1 = {
+			isa = PBXGroup;
+			children = (
+				852A73BD234E77E700E235D1 /* DogsC */,
+				852A73BC234E77E700E235D1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		852A73BC234E77E700E235D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				852A73BB234E77E700E235D1 /* DogsC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		852A73BD234E77E700E235D1 /* DogsC */ = {
+			isa = PBXGroup;
+			children = (
+				852A73DF234E840C00E235D1 /* Model Controllers */,
+				852A73D8234E780E00E235D1 /* model */,
+				852A73D7234E77FE00E235D1 /* resources */,
+				852A73C7234E77E700E235D1 /* Main.storyboard */,
+			);
+			path = DogsC;
+			sourceTree = "<group>";
+		};
+		852A73D7234E77FE00E235D1 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				852A73BE234E77E700E235D1 /* AppDelegate.h */,
+				852A73BF234E77E700E235D1 /* AppDelegate.m */,
+				852A73C1234E77E700E235D1 /* SceneDelegate.h */,
+				852A73C2234E77E700E235D1 /* SceneDelegate.m */,
+				852A73CA234E77E800E235D1 /* Assets.xcassets */,
+				852A73CC234E77E800E235D1 /* LaunchScreen.storyboard */,
+				852A73CF234E77E800E235D1 /* Info.plist */,
+				852A73D0234E77E800E235D1 /* main.m */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		852A73D8234E780E00E235D1 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				852A73D9234E783100E235D1 /* ZWWBreed.h */,
+				852A73DA234E783100E235D1 /* ZWWBreed.m */,
+				852A73DC234E7C0500E235D1 /* ZWWSubBreeds.h */,
+				852A73DD234E7C0500E235D1 /* ZWWSubBreeds.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		852A73DF234E840C00E235D1 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				852A73E4234E844100E235D1 /* subBreed controller */,
+				852A73E0234E842700E235D1 /* breed controller */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		852A73E0234E842700E235D1 /* breed controller */ = {
+			isa = PBXGroup;
+			children = (
+				852A73E1234E843B00E235D1 /* ZWWBreedController.h */,
+				852A73E2234E843B00E235D1 /* ZWWBreedController.m */,
+			);
+			path = "breed controller";
+			sourceTree = "<group>";
+		};
+		852A73E4234E844100E235D1 /* subBreed controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "subBreed controller";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		852A73BA234E77E700E235D1 /* DogsC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 852A73D4234E77E800E235D1 /* Build configuration list for PBXNativeTarget "DogsC" */;
+			buildPhases = (
+				852A73B7234E77E700E235D1 /* Sources */,
+				852A73B8234E77E700E235D1 /* Frameworks */,
+				852A73B9234E77E700E235D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DogsC;
+			productName = DogsC;
+			productReference = 852A73BB234E77E700E235D1 /* DogsC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		852A73B3234E77E700E235D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ZWW;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Zebadiah Watson";
+				TargetAttributes = {
+					852A73BA234E77E700E235D1 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = 852A73B6234E77E700E235D1 /* Build configuration list for PBXProject "DogsC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 852A73B2234E77E700E235D1;
+			productRefGroup = 852A73BC234E77E700E235D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				852A73BA234E77E700E235D1 /* DogsC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		852A73B9234E77E700E235D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				852A73CE234E77E800E235D1 /* LaunchScreen.storyboard in Resources */,
+				852A73CB234E77E800E235D1 /* Assets.xcassets in Resources */,
+				852A73C9234E77E700E235D1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		852A73B7234E77E700E235D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				852A73E3234E843B00E235D1 /* ZWWBreedController.m in Sources */,
+				852A73C0234E77E700E235D1 /* AppDelegate.m in Sources */,
+				852A73D1234E77E800E235D1 /* main.m in Sources */,
+				852A73DE234E7C0500E235D1 /* ZWWSubBreeds.m in Sources */,
+				852A73C3234E77E700E235D1 /* SceneDelegate.m in Sources */,
+				852A73DB234E783100E235D1 /* ZWWBreed.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		852A73C7234E77E700E235D1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				852A73C8234E77E700E235D1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		852A73CC234E77E800E235D1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				852A73CD234E77E800E235D1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		852A73D2234E77E800E235D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		852A73D3234E77E800E235D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		852A73D5234E77E800E235D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GQHR9QPNK6;
+				INFOPLIST_FILE = "$(SRCROOT)/DogsC/resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.DogsC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		852A73D6234E77E800E235D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GQHR9QPNK6;
+				INFOPLIST_FILE = "$(SRCROOT)/DogsC/resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.DogsC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		852A73B6234E77E700E235D1 /* Build configuration list for PBXProject "DogsC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				852A73D2234E77E800E235D1 /* Debug */,
+				852A73D3234E77E800E235D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		852A73D4234E77E800E235D1 /* Build configuration list for PBXNativeTarget "DogsC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				852A73D5234E77E800E235D1 /* Debug */,
+				852A73D6234E77E800E235D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 852A73B3234E77E700E235D1 /* Project object */;
+}
