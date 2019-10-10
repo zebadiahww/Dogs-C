@@ -12,8 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ZWWSubBreeds : NSObject
 
-@property (nonatomic, readonly, copy)NSString * name;
-@property (nonatomic, readonly, copy)NSArray * imageURLs;
+@property (nonatomic, copy)NSString * name;
+@property (nonatomic, copy)NSArray * imageURLs;
 
 -(ZWWSubBreeds *)initWithName:(NSString *)name
                     imageURLs:(NSArray<NSString *> *)imageURLs;

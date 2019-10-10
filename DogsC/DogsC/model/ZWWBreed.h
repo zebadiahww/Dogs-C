@@ -7,14 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ZWWSubBreeds.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZWWBreed : NSObject
 
 @property (nonatomic, copy, readonly)NSString * name;
-@property (nonatomic, copy, readonly, nullable)NSArray * subbreed;
-@property (nonatomic, copy, readonly) NSArray * imageURLs;
+@property (nonatomic, copy, readonly)NSArray<ZWWSubBreeds *> *subbreeds;
+@property (nonatomic, copy,) NSArray * imageURLs;
 
 -(ZWWBreed*) initWithName:(NSString *)name
                  subbreed:(NSArray<NSString *>*)subbreed

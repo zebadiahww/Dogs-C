@@ -30,7 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
                        breed:(ZWWBreed *)breed
                   completion:(void(^)(NSArray *))completion;
 
--(void)fetchImageDataFromURL:(NSURL *)url
+-(void)fetchImageDataFromURL:(NSString *)url
                   completion: (void (^)(NSData * _Nullable imageData))completion;
 
 

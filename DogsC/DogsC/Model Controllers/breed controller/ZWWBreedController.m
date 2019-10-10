@@ -131,9 +131,10 @@ static NSString * const kImagesComponent = @"images";
 }
 
 
-- (void)fetchImageDataFromURL:(NSURL *)url completion:(void (^)(NSData * _Nullable))completion
+- (void)fetchImageDataFromURL:(NSString *)url completion:(void (^)(NSData * _Nullable))completion
 {
-    [[[NSURLSession sharedSession] dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+    NSURL * finalURL = [NSURL URLWithString:url];
+    [[[NSURLSession sharedSession] dataTaskWithURL:finalURL completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error)
         {
             NSLog(@"%@", error);

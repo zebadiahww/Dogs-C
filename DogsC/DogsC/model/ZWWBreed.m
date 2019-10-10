@@ -10,13 +10,14 @@
 
 @implementation ZWWBreed
 
--(ZWWBreed *)initWithName:(NSString *)name subbreed:(NSArray *)subbreed imageURLs:(nonnull NSArray *)imageURLs;
+- (ZWWBreed *)initWithName:(NSString *)name subbreed:(NSArray<ZWWSubBreeds *> *)subbreed imageURLs:(NSArray<NSString *> *)imageURLs
 {
+
     self = [super init];
     if (self)
     {
         _name = name;
-        _subbreed = subbreed;
+        _subbreeds = subbreed;
         _imageURLs = imageURLs;
     }
     return self;

@@ -20,7 +20,7 @@
     [[ZWWBreedController sharedController] fetchBreeds:^(NSArray<ZWWBreed *> * _Nonnull breeds) {
         NSLog(@"%@", breeds);
         ZWWBreed *breed = breeds[0];
-        ZWWSubBreeds *subbreed = breed.subbreed[0];
+        ZWWSubBreeds *subbreed = breed.subbreeds[0];
         [ZWWBreedController.sharedController fetchSubBreedImageUrl:subbreed breed:breed completion:^(NSArray * _Nonnull array) {
             
         }];

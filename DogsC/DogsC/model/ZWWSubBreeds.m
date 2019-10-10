@@ -10,8 +10,7 @@
 
 @implementation ZWWSubBreeds
 
--(ZWWSubBreeds *)initWithName:(NSString *)name imageURLs:(NSArray *)imageURLs
-{
+- (ZWWSubBreeds *)initWithName:(NSString *)name imageURLs:(NSArray<NSString *> *)imageURLs{
     self = [super init];
     if (self)
     {
