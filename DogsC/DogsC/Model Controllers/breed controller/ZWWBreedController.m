@@ -70,24 +70,86 @@ static NSString * const kImagesComponent = @"images";
                 [arrayOfBreeds addObject:breed];
             }
             completion(arrayOfBreeds);
-
+            
         }
     }]resume];
 }
 
-//- (void)fetchBreedImageUrl:(ZWWBreed *)breed completion:(void (^)(NSArray * _Nonnull))completion
-//{
-//    NSURL * baseURL  = [NSURL URLWithString:kfetchBreedsBaseURLString];
-//    NSURL * breedURL = [baseURL URLByAppendingPathComponent: breed.name];
-//    NSURL * finalURL = [breedURL URLByAppendingPathComponent:kImagesComponent];
-//
-//    [[[NSURLSession sharedSession] dataTaskWithURL:finalURL completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-//        if (error)
-//        {
-//            NSLog(@"%@", error)
-//            completion(
-//        }
-//    } ]resume];
-//}
+- (void)fetchBreedImageUrl:(ZWWBreed *)breed completion:(void (^)(NSArray * _Nonnull))completion
+{
+    NSURL * baseURL  = [NSURL URLWithString:kFetchImageBreedBaseUrl];
+    NSURL * breedURL = [baseURL URLByAppendingPathComponent: breed.name];
+    NSURL * finalURL = [breedURL URLByAppendingPathComponent:kImagesComponent];
+    
+    [[[NSURLSession sharedSession] dataTaskWithURL:finalURL completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        if (error)
+        {
+            NSLog(@"%@", error);
+            completion(@[]);
+            return;
+        }
+        
+        if (data)
+        {
+            NSDictionary *imageDictionary = [NSJSONSerialization JSONObjectWithData:data options:2 error:&error];
+            if (error)
+            {
+                NSLog(@"%@", error);
+            }
+            NSMutableArray *imageArray = imageDictionary[@"message"];
+            completion(imageArray);
+        }
+    } ]resume];
+}
 
+- (void)fetchSubBreedImageUrl:(ZWWSubBreeds *)subbreed breed:(ZWWBreed *)breed completion:(void (^)(NSArray * _Nonnull))completion
+{
+    NSURL * baseURL  = [NSURL URLWithString:kFetchImageBreedBaseUrl];
+    NSURL * breedURL = [baseURL URLByAppendingPathComponent: breed.name];
+    NSURL * subbreedURL = [breedURL URLByAppendingPathComponent:subbreed.name];
+    NSURL * finalURL = [subbreedURL URLByAppendingPathComponent:kImagesComponent];
+    
+    [[[NSURLSession sharedSession] dataTaskWithURL:finalURL completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        if (error)
+        {
+            NSLog(@"%@", error);
+            completion(@[]);
+            return;
+        }
+        
+        if (data)
+        {
+            NSDictionary *imageDictionary = [NSJSONSerialization JSONObjectWithData:data options:2 error:&error];
+            if (error)
+            {
+                NSLog(@"%@", error);
+            }
+            NSMutableArray *imageArray = imageDictionary[@"message"];
+            completion(imageArray);
+        }
+    } ]resume];
+}
+
+
+- (void)fetchImageDataFromURL:(NSURL *)url completion:(void (^)(NSData * _Nullable))completion
+{
+    [[[NSURLSession sharedSession] dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        if (error)
+        {
+            NSLog(@"%@", error);
+            completion(nil);
+            return;
+        }
+        
+        if (response)
+        {
+            NSLog(@"%@", response);
+        }
+        
+        if (data)
+        {
+            completion(data);
+        }
+    }]resume];
+}
 @end

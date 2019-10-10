@@ -19,6 +19,11 @@
     // Override point for customization after application launch.
     [[ZWWBreedController sharedController] fetchBreeds:^(NSArray<ZWWBreed *> * _Nonnull breeds) {
         NSLog(@"%@", breeds);
+        ZWWBreed *breed = breeds[0];
+        ZWWSubBreeds *subbreed = breed.subbreed[0];
+        [ZWWBreedController.sharedController fetchSubBreedImageUrl:subbreed breed:breed completion:^(NSArray * _Nonnull array) {
+            
+        }];
         for (ZWWBreed *dog in breeds)
         {
             NSLog(@"%@", dog.name);

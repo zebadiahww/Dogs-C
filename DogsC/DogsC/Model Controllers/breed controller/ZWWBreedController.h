@@ -16,13 +16,22 @@ NS_ASSUME_NONNULL_BEGIN
 
 +(instancetype)sharedController;
 
+//HEY DUMMY DONT FORGET
+@property(nonatomic, copy) NSArray<ZWWBreed *> * breeds;
+@property(nonatomic, copy) NSArray<ZWWSubBreeds *> * subbreeds;
+
+
+
 -(void)fetchBreeds: (void (^)(NSArray<ZWWBreed *>*breeds))completion;
 
 -(void)fetchBreedImageUrl: (ZWWBreed *)breed completion:(void (^)(NSArray *))completion;
 
--(void)fetchSubBreedImageUrl: (void(^)(NSString *))completion;
+-(void)fetchSubBreedImageUrl: (ZWWSubBreeds *)subbreed
+                       breed:(ZWWBreed *)breed
+                  completion:(void(^)(NSArray *))completion;
 
--(void)fetchImageData: (void (^)(NSData *))completion;
+-(void)fetchImageDataFromURL:(NSURL *)url
+                  completion: (void (^)(NSData * _Nullable imageData))completion;
 
 
 

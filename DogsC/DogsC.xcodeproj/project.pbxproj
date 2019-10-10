@@ -16,6 +16,8 @@
 		852A73DB234E783100E235D1 /* ZWWBreed.m in Sources */ = {isa = PBXBuildFile; fileRef = 852A73DA234E783100E235D1 /* ZWWBreed.m */; };
 		852A73DE234E7C0500E235D1 /* ZWWSubBreeds.m in Sources */ = {isa = PBXBuildFile; fileRef = 852A73DD234E7C0500E235D1 /* ZWWSubBreeds.m */; };
 		852A73E3234E843B00E235D1 /* ZWWBreedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 852A73E2234E843B00E235D1 /* ZWWBreedController.m */; };
+		85A78D2A234FAD3B000FBC64 /* ZWWBreedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A78D29234FAD3B000FBC64 /* ZWWBreedTableViewController.swift */; };
+		85A78D2C234FAD92000FBC64 /* ZWWSubBreedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A78D2B234FAD92000FBC64 /* ZWWSubBreedTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,9 @@
 		852A73DD234E7C0500E235D1 /* ZWWSubBreeds.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWWSubBreeds.m; sourceTree = "<group>"; };
 		852A73E1234E843B00E235D1 /* ZWWBreedController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWWBreedController.h; sourceTree = "<group>"; };
 		852A73E2234E843B00E235D1 /* ZWWBreedController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWWBreedController.m; sourceTree = "<group>"; };
+		85A78D28234FAD3B000FBC64 /* DogsC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DogsC-Bridging-Header.h"; sourceTree = "<group>"; };
+		85A78D29234FAD3B000FBC64 /* ZWWBreedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZWWBreedTableViewController.swift; sourceTree = "<group>"; };
+		85A78D2B234FAD92000FBC64 /* ZWWSubBreedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZWWSubBreedTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +72,7 @@
 		852A73BD234E77E700E235D1 /* DogsC */ = {
 			isa = PBXGroup;
 			children = (
+				85A78D27234FAD1D000FBC64 /* View Controllers */,
 				852A73DF234E840C00E235D1 /* Model Controllers */,
 				852A73D8234E780E00E235D1 /* model */,
 				852A73D7234E77FE00E235D1 /* resources */,
@@ -126,6 +132,16 @@
 			path = "subBreed controller";
 			sourceTree = "<group>";
 		};
+		85A78D27234FAD1D000FBC64 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				85A78D29234FAD3B000FBC64 /* ZWWBreedTableViewController.swift */,
+				85A78D28234FAD3B000FBC64 /* DogsC-Bridging-Header.h */,
+				85A78D2B234FAD92000FBC64 /* ZWWSubBreedTableViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -158,6 +174,7 @@
 				TargetAttributes = {
 					852A73BA234E77E700E235D1 = {
 						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
 					};
 				};
 			};
@@ -198,6 +215,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				852A73E3234E843B00E235D1 /* ZWWBreedController.m in Sources */,
+				85A78D2A234FAD3B000FBC64 /* ZWWBreedTableViewController.swift in Sources */,
+				85A78D2C234FAD92000FBC64 /* ZWWSubBreedTableViewController.swift in Sources */,
 				852A73C0234E77E700E235D1 /* AppDelegate.m in Sources */,
 				852A73D1234E77E800E235D1 /* main.m in Sources */,
 				852A73DE234E7C0500E235D1 /* ZWWSubBreeds.m in Sources */,
@@ -342,6 +361,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GQHR9QPNK6;
 				INFOPLIST_FILE = "$(SRCROOT)/DogsC/resources/Info.plist";
@@ -351,6 +371,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.DogsC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DogsC/View Controllers/DogsC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -359,6 +382,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GQHR9QPNK6;
 				INFOPLIST_FILE = "$(SRCROOT)/DogsC/resources/Info.plist";
@@ -368,6 +392,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.DogsC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DogsC/View Controllers/DogsC-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
